@@ -1,5 +1,5 @@
-const FULL_LOGO_SRC = `${import.meta.env.BASE_URL}krishna-webdesign-logo.jpeg`;
-const MARK_LOGO_SRC = `${import.meta.env.BASE_URL}krishna-webdesign-mark.png`;
+const FULL_LOGO_SRC = `${import.meta.env.BASE_URL}krishna-webdesign-logo-v2.jpeg`;
+const MARK_LOGO_SRC = `${import.meta.env.BASE_URL}krishna-webdesign-mark-v2.png`;
 
 type BrandLogoProps = {
   size?: "nav" | "footer" | "login";
