@@ -90,18 +90,23 @@ const showcase = [
   {
     title: "Cars Website",
     url: "https://cars-web-priyansh000001.netlify.app",
+    thumbnail: "https://image.thum.io/get/width/1200/noanimate/https://cars-web-priyansh000001.netlify.app",
   },
   {
     title: "Sample Gym Website",
     url: "https://semple-gym-webshite.netlify.app",
+    thumbnail: "https://image.thum.io/get/width/1200/noanimate/https://semple-gym-webshite.netlify.app",
   },
   {
     title: "Sample MG Bites",
     url: "https://semple-mg-bites.netlify.app",
+    thumbnail: "https://image.thum.io/get/width/1200/noanimate/https://semple-mg-bites.netlify.app",
   },
   {
     title: "Puma Hungry For More",
     url: "https://puma-hungry-for-more-priyansh-20260410.netlify.app",
+    thumbnail:
+      "https://image.thum.io/get/width/1200/noanimate/https://puma-hungry-for-more-priyansh-20260410.netlify.app",
   },
 ];
 
@@ -352,7 +357,14 @@ export default function App() {
                 key={project.url}
                 className="glass group rounded-2xl border border-border/70 p-4 transition hover:-translate-y-1 hover:border-accent/35"
               >
-                <div className="h-36 rounded-xl border border-accent/20 bg-gradient-to-br from-accent/25 to-transparent sm:h-40" />
+                <div className="h-36 overflow-hidden rounded-xl border border-accent/20 sm:h-40">
+                  <img
+                    src={project.thumbnail}
+                    alt={`${project.title} preview`}
+                    loading="lazy"
+                    className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
                 <h3 className="mt-4 text-base font-semibold">{project.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Premium layout system focused on trust, authority, and lead conversion.
